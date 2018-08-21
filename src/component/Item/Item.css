@@ -1,0 +1,36 @@
+table {
+margin: 0 auto; 
+}
+
+tr,td {
+    background-color: #ffe200;
+}
+
+td[class='data']{
+    width:200px;
+}
+/* input[type=checkbox]:checked ~ td[class='data']{
+    text-decoration: line-through;
+} */
+
+.ticked{
+    text-decoration: line-through;
+    display:none;
+}
+
+button[type='submit']{
+   
+    cursor:pointer;
+    overflow: hidden;
+    background-color: #002852;
+    color: white;
+    padding: 10px;
+    margin: 0px 0px 0px 5px;
+    border: none;
+}
+
+td> button{
+    background-color: Transparent;
+    border: none;
+    
+}

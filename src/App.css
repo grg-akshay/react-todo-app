@@ -1,0 +1,36 @@
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  --font-family:"Lucida Sans";
+  
+}
+
+html, body{
+  background-color:#e3de00;
+  background-size: cover;
+  height: 100%; width: 100%;
+}
+
+.App {
+  text-align: center; 
+  height: 100%; width: 100%;
+}
+
+.App-header {
+  background-color:#002852 ;
+  --height: 25%;
+  --width: 100px;
+  padding: 20px;
+  color: #ffe200;
+  font-size: 130%;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
