@@ -71,7 +71,7 @@ class ToDo extends Component {
                 />
                 <br/>
 
-               {this.state.list.length>0 && <button className='clear-button' type="submit"  onClick= {this.handleRemoveAll}>Clear the list</button>}
+               {this.state.list.length>1 && <button className='clear-button' type="submit"  onClick= {this.handleRemoveAll}>Clear the list</button>}
             </div>    
          );
     }
