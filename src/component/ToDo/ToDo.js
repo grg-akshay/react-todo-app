@@ -60,18 +60,18 @@ class ToDo extends Component {
             <div>
                 <form onSubmit={this.handleAddItem}>
                     <input type="search"  name="inputList" placeholder="Enter task here" />                   
-                    <button type="submit">Add task</button>
+                    <button type="submit" className='submit-button'>Add task</button>
                 </form>
-                <button type="submit"  onClick= {this.handleRemoveAll}>Remove All</button>
+                
                 <Page 
                 items={this.state.list} 
                 currentPage ={this.state.currentPage}
                 handleSingleRemove={this.handleSingleRemove} 
                 handlePageClick={this.handlePageClick}
                 />
-                <div>
-                    {this.state.completed}
-                </div>
+                <br/>
+
+               {this.state.list.length>0 && <button className='clear-button' type="submit"  onClick= {this.handleRemoveAll}>Clear the list</button>}
             </div>    
          );
     }

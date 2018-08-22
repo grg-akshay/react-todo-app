@@ -35,7 +35,7 @@ const Page = (props) => {
           items={currentItems} 
           handleSingleRemove={props.handleSingleRemove}   
           />
-          <p>{renderPageNumbers}</p>
+          {items.length>3 && <p>{renderPageNumbers}</p>}
         </div>
     );
 }
