@@ -41,7 +41,7 @@ class ToDo extends Component {
 
         if(item.length>0){
             this.setState( (prevState) =>({
-                    list: [ item, ...prevState.list ]
+                    list: [ ...prevState.list, item ]
                 })
             )    
         }
