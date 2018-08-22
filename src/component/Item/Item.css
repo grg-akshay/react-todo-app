@@ -6,6 +6,15 @@ tr,td {
     background-color: #ffe200;
 }
 
+.cross{
+    display:none;
+}
+
+tr:hover  .cross, .cross:hover{
+    display: block;
+    float:   right;
+}
+
 td[class='data']{
     width:200px;
 }

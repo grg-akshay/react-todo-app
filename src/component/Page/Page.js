@@ -33,8 +33,7 @@ const Page = (props) => {
         <div>
           <Items 
           items={currentItems} 
-          handleSingleRemove={props.handleSingleRemove}
-          setCompleteTask={props.setCompleteTask}     
+          handleSingleRemove={props.handleSingleRemove}   
           />
           <p>{renderPageNumbers}</p>
         </div>

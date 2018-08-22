@@ -2,23 +2,17 @@ import React from 'react';
 import './Item.css';
 
 
-function handleCheck(item, setCompleteTask){
-document.getElementById(item).classList.add('ticked');
-setCompleteTask(item);
-}
 const Item = (props) => {
     return (
-        <tr id={props.item}>
-            <td>
-                <input type='checkbox' onClick={e => handleCheck(props.item, props.setCompleteTask)} ></input>
-            </td>
+        <tr >
             <td className='data' id={props.item}>
                 {props.item}
-            </td>
-            <td>
-                <button 
+            {/* </td>
+            <td> */}
+                <button className='cross'
                 onClick={(e) => props.handleSingleRemove(props.item)} >
                 <i className="fa fa-times-circle" 
+                title="Delete"
                 style={{fontSize:'24px', backgroundColor:'transparent'  ,  border:'0px', cursor: 'pointer'}}>
                 </i>
                 </button>

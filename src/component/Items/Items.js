@@ -11,7 +11,6 @@ const Items = (props) => {
                             item={item} 
                             key={index} 
                             handleSingleRemove={props.handleSingleRemove} 
-                            setCompleteTask={props.setCompleteTask} 
                             />
 
                 })

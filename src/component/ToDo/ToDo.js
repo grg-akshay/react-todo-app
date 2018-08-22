@@ -6,31 +6,14 @@ class ToDo extends Component {
     constructor(props) {
         super(props);
         this.state = {  list: [],
-                        currentPage: 1,
-                        completed: []
+                        currentPage: 1
                     };
         this.handleAddItem=this.handleAddItem.bind(this);
         this.handleRemoveAll=this.handleRemoveAll.bind(this);
         this.handleSingleRemove=this.handleSingleRemove.bind(this);
         this.handlePageClick= this.handlePageClick.bind(this);
-        this.setCompleteTask=this.setCompleteTask.bind(this);
     }
 
-    setCompleteTask(temp){
-        console.log("complete task");
-        debugger;
-        if(this.state.completed.length >0){
-        this.setState((prev) => ({
-            completed: [...prev, temp]
-        }));
-        }
-        else{
-            this.setState((prev) => ({
-                completed: [ temp]
-            }));
-        }
-
-    }
 
     handleRemoveAll(){
         this.setState({
@@ -85,7 +68,6 @@ class ToDo extends Component {
                 currentPage ={this.state.currentPage}
                 handleSingleRemove={this.handleSingleRemove} 
                 handlePageClick={this.handlePageClick}
-                setCompleteTask={this.setCompleteTask}
                 />
                 <div>
                     {this.state.completed}
